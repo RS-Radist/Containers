@@ -1,5 +1,3 @@
-
-
 #ifndef List_hpp
 #define List_hpp
 
@@ -14,6 +12,7 @@ public:
     ~List();
     void Push(int x);
     void Show ();
+    bool isEmpty();//сделать
 };
 
 

@@ -1,30 +1,25 @@
-
-
 #ifndef Container_hpp
 #define Container_hpp
-
 #include <stdio.h>
 
-class Container // создаине класс
+class Container
 {
-protected:// защищеный
+protected:
     struct Node
     {
-        int value; // значение элемента списка
-        Node* next;// след. нода
+        int value;
+        Node* next;
     };
     Node*head;
     Node*tail;
     int size;
     int arr[10];
-    int end,begin;  //создание массива
+    int end,begin;
 public:
-    Container()
-    {}
+    Container();
     void Push(int x);
     void Pop();
-    void End();
-    void Begin();
-    int ClearQueue();
+    void SortStruct();
+    bool isEmpty();
 };
-#endif /* Container_hpp */
+#endif
